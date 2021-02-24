@@ -4,10 +4,9 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
 }
-
 
 /* Link styles */
 ul {
@@ -37,6 +36,7 @@ hr {
 .name {
   padding: 20px;
   margin: 0;
+  font-size: 28px;
 }
 
 li {
@@ -53,23 +53,23 @@ li {
 .nav-list li {
   background-color: white;
   color: black;
-  padding: 10px 35%;
+  padding: 10px 15%;
   margin: 10px auto;
   display: table;
-  width: 10px;
+  width: 275px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
 }
 
 .container {
-	width: 90%;
-	margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .main-header {
-	background: #3acec2;
-	padding: 1em 0;
+  background: #3acec2;
+  padding: 1em 0;
 }
 
 header img {
@@ -78,9 +78,9 @@ header img {
 }
 
 .main-footer {
-	text-align: center;
-	/* padding: 2em 0; */
-	background: #d9e4ea;
+  text-align: center;
+  /* padding: 2em 0; */
+  background: #d9e4ea;
 }
 
 .caption {
@@ -93,7 +93,7 @@ header img {
   padding: 20px;
   margin: 40px;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .marketing img {
@@ -111,7 +111,6 @@ section .marketing {
 }
 
 /* footer */
-
 
 .contact {
   margin-top: 80px;
