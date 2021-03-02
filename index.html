@@ -12,89 +12,118 @@
 
 <body>
     <header class="main-header">
-        <div class="container">
-            <h1 class="name">Alex Hyman</h1>
-            <div class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        <div class="container" id="header">
+            <div class="flex-nav">
+                <h1 class="name">Alex Hyman</h1>
+                <div class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="intro">
                 <img src="images/responsive-layout-profile.png" alt="profile image">
-                <p class="">Hi! I'm a frontend developer who loves responsive design and css. I recently finished a degree in
+                <p>Hi! I'm a frontend developer who loves responsive design and css. I recently finished a degree in
                     front-end wed development at Treehouse and am excited to put all my skills to use!</p>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container">
+        <div id="portfolio">
             <h1 class="portfolio-title">Portfolio</h1>
+            <div class="container portfolio">
 
-            <section class="marketing">
-                <img src="images/portfolio-1.png" alt="Marketing">
-                <div class="image-caption">
-                    <h1 class="title">Marketing Page</h1>
-                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quia provident aliquam mollitia
-                        in deleniti impedit deserunt aperiam!</p>
-                </div>
-            </section>
 
-            <section class="marketing">
-                <img src="images/portfolio-1.png" alt="Marketing">
-                <div class="image-caption">
-                    <h1 class="title">Marketing Page</h1>
-                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quia provident aliquam mollitia
-                        in deleniti impedit deserunt aperiam!</p>
-                </div>
-            </section>
+                <section class="project">
+                    <img src="images/portfolio-1.png" alt="Marketing">
+                    <div class="image-caption">
+                        <h1 class="title">Marketing Page</h1>
+                        <p class="info">This project shows the front page of a marketing website meant for a specific
+                            business I'm interested in.</p>
+                    </div>
+                </section>
 
-            <section class="marketing">
-                <img src="images/portfolio-1.png" alt="Marketing">
-                <div class="image-caption">
-                    <h1 class="title">Marketing Page</h1>
-                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quia provident aliquam mollitia
-                        in deleniti impedit deserunt aperiam!</p>
-                </div>
-            </section>
+                <section class="project">
+                    <img src="images/portfolio-2.png" alt="Marketing">
+                    <div class="image-caption">
+                        <h1 class="title">Search App</h1>
+                        <p class="info">This project searches through a specific database to find information that the
+                            user is trying to look up.</p>
+                    </div>
+                </section>
 
-            <section class="marketing img-width">
-                <img src="images/portfolio-1.png" alt="Marketing">
-                <div class="image-caption">
-                    <h1 class="title">Marketing Page</h1>
-                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quia provident aliquam mollitia
-                        in deleniti impedit deserunt aperiam!</p>
-                </div>
-            </section>
+                <section class="project">
+                    <img src="images/portfolio-3.png" alt="Marketing">
+                    <div class="image-caption">
+                        <h1 class="title">Travel App</h1>
+                        <p class="info">This project compares travel times based on different transportation methods and
+                            tells you the best one.</p>
+                    </div>
+                </section>
 
-            <section class="marketing">
-                <img src="images/portfolio-1.png" alt="Marketing">
-                <div class="image-caption">
-                    <h1 class="title">Marketing Page</h1>
-                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quia provident aliquam mollitia
-                        in deleniti impedit deserunt aperiam!</p>
-                </div>
-            </section>
+                <section class="project">
+                    <img src="images/portfolio-4.png" alt="Marketing">
+                    <div class="image-caption">
+                        <h1 class="title">Map of Favorite Spots</h1>
+                        <p class="info">This project uses mapping apis to plot points for my favorite spots in the city
+                            for a do-it-yourself walking tour.</p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img src="images/portfolio-5.png" alt="Marketing">
+                    <div class="image-caption">
+                        <h1 class="title">Photo Gallary</h1>
+                        <p class="info">This project shows pictures from a recent trip to the viewer and allows them to
+                            easily navigate through photos.</p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img src="images/portfolio-6.png" alt="Marketing">
+                    <div class="image-caption">
+                        <h1 class="title">Calculator</h1>
+                        <p class="info">Someone can enter in the numbers they want, and press the big blue button and
+                            get the result.</p>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
     <footer class="main-footer">
-        <div class="container">
+        <div class="container" id="contact">
             <h1 class="contact">Contact</h1>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <h2><span>Phone</span>&emsp;&emsp;&emsp;737 737 7373</h2>
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love
+                to
+                hear from you!</p>
+            <h2><span>Phone</span>&emsp;&emsp;&emsp;+1 (212) 555 1414</h2>
             <h2><span>Email</span>&emsp;&emsp;&emsp;alex.hyman@comcast.net</h2>
             <br>
             <br>
             <hr>
             <div class="student-name">
-                <h3>Alex Hyman</h3>
-                <h3 class="back-to-top"><a href="#">back to top</a></h3>
+                <h3><a href="#">Alex Hyman</a></h3>
+                <h3 class="back-to-top"><a href="#header">back to top</a></h3>
+            </div>
+            <div class="footer-flex">
+                <div class="left-menu">
+                    <h3><a href="#">Alex Hyman</a></h3>
+                </div>
+                <div class="right-menu">
+                    <ul>
+                        <li><a href="#header">home</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </footer>
 </body>
 

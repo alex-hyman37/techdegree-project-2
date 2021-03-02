@@ -21,6 +21,7 @@ a {
 p {
   font-size: 18px;
   line-height: 1.25;
+  font-weight: 300;
 }
 
 hr {
@@ -30,18 +31,13 @@ hr {
 
 /* Navbar */
 .main-nav {
-  max-width: 320px;
+  text-align: center;
 }
 
 .name {
   padding: 20px;
   margin: 0;
   font-size: 28px;
-}
-
-li {
-  margin: 20px;
-  font-style: bold;
 }
 
 .nav-list {
@@ -56,10 +52,11 @@ li {
   padding: 10px 15%;
   margin: 10px auto;
   display: table;
-  width: 275px;
+  width: 100%;
   text-transform: uppercase;
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .container {
@@ -68,7 +65,7 @@ li {
 }
 
 .main-header {
-  background: #3acec2;
+  background: #fafafa;
   padding: 1em 0;
 }
 
@@ -79,8 +76,7 @@ header img {
 
 .main-footer {
   text-align: center;
-  /* padding: 2em 0; */
-  background: #d9e4ea;
+  background: #fafafa;
 }
 
 .caption {
@@ -93,21 +89,27 @@ header img {
   padding: 20px;
   margin: 40px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-.marketing img {
-  width: 95%;
-  margin: 30px 10px auto;
+.project img {
+  width: 100%;
+  margin: 30px 0 auto;
   margin-top: 0;
 }
 
-.image-caption {
-  margin: 35px;
+.title {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 20px 0;
 }
 
-section .marketing {
-  margin: 0;
+.image-caption {
+  margin: 35px 0;
+}
+
+.image-caption p {
+  margin: 0 10px;
 }
 
 /* footer */
@@ -145,7 +147,7 @@ section .marketing {
 .student-name {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .student-name h3 {
@@ -154,4 +156,161 @@ section .marketing {
 
 .student-name .back-to-top {
   text-transform: uppercase;
+}
+
+.footer-flex {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* Navbar */
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list li {
+    margin: 10px 3px;
+    padding: 0 5px;
+    width: 100px;
+    background-color: transparent;
+  }
+
+  /* Profile picture/intro */
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 40px 0;
+  }
+
+  .intro img {
+    margin: 0;
+    width: 40%;
+  }
+
+  .intro p {
+    padding-right: 20px;
+    margin: 0;
+    text-align: left;
+    color: gray;
+    font-weight: 300;
+    font-size: 19px;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .project img {
+    width: 96%;
+  }
+
+  .project p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 40px;
+  }
+
+  .image-caption {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+
+  /* Footer */
+  .contact {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .main-footer p {
+    margin: 0 100px;
+  }
+
+  .student-name {
+    display: none;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .footer-flex a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .left-menu h3 {
+    margin: 0;
+  }
+
+  .right-menu ul {
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  .right-menu a {
+    padding-left: 30px;
+    /* margin: 0 10px; */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Navbar */
+  .flex-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+
+  .flex-nav h1 {
+    padding: 0;
+  }
+
+  .nav-list li {
+    font-size: 14px;
+    font-weight: 600;
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    /* width: auto; */
+  }
+
+  .nav-list a {
+    padding-left: 30px;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .project p {
+    margin: 0 15px;
+  }
+
+  /* Footer */
+  .main-footer p {
+    margin: 0 215px;
+  }
+
+  .contact {
+    margin-bottom: 0;
+  }
+
+  .footer-flex {
+    padding-bottom: 20px;
+  }
 }
